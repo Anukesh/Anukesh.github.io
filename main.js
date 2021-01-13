@@ -320,7 +320,7 @@ class BookListComponent {
     }
     ngOnInit() {
         this.genre = this.route.snapshot.paramMap.get('genre');
-        this.bookUrl = 'http://gutendex.com/books/?mime_type=image&topic=' + this.genre;
+        this.bookUrl = 'https://gutendex.com/books/?mime_type=image&topic=' + this.genre;
         this.getBookList(this.bookUrl);
     }
     ngOnDestroy() {
